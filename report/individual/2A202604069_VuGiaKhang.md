@@ -35,7 +35,7 @@ Chọn object đầu tiên bạn tự vẽ ở `medium_instance`, trước khi x
 - Ảnh, vị trí và object Medium đầu tiên tự vẽ: Ảnh 000000181542.jpg, xe ô tô con màu trắng ở làn giữa gần góc nhìn người lái.
 - Class và quy tắc tôi dùng để chọn biên: Class car; quy tắc biên: bám sát theo mép thân xe, gương chiếu hậu và lốp tiếp xúc mặt đường; không cắt rời cửa sổ/kính xe ra khỏi thân xe.
 - Nếu dùng gợi ý sau đó: vùng gợi ý sai/đúng, hành động sửa/giữ và lý do: Gợi ý nhận diện cơ bản khung xe nhưng viền mép bánh xe bị lẹm vào bóng râm mặt đường; đã dùng công cụ Brush/Polygon tinh chỉnh lại mép tiếp giáp giữa lốp xe và mặt đường.
-- Nếu không dùng gợi ý: ghi “không dùng”; vẫn giải thích một quyết định gán nhãn của mình.
+- Nếu không dùng gợi ý: Đã dùng gợi ý của mô hình và chủ động tinh chỉnh thủ công các đường biên bằng Brush/Polygon như nêu trên.
 
 ## 3. Một lỗi tôi tìm thấy và sửa
 
@@ -47,7 +47,7 @@ Chọn một lỗi **có thật** trong bài. Nếu công cụ lỗi khiến b�
 - Quy tắc và hành động sửa: Dùng cọ tô lại toàn bộ khu vực sườn đồi và cây cối thành nhãn vegetation (107, 142, 35), mặt đường nhựa thành road (128, 64, 128), xóa bỏ hoàn toàn vùng sidewalk sai lệch.
 - Sau sửa đã Save và export lại chưa? Đã Save và export lại thành công định dạng Segmentation mask 1.1 vào submissions/easy_semantic.zip.
 
-Nếu bạn **đã xem Summary tự đánh giá trên GitHub Actions hoặc tự chạy script**, ghi ngắn một kết quả liên quan lỗi vừa sửa (ví dụ task, metric trước/sau nếu có): Chạy inspect_submissions.py báo [OK] 0 errors.
+Nếu bạn **đã xem Summary tự đánh giá trên GitHub Actions hoặc tự chạy script**, ghi ngắn một kết quả liên quan lỗi vừa sửa (ví dụ task, metric trước/sau nếu có): Chạy `python scripts/inspect_submissions.py --dir submissions` báo [OK] cho toàn bộ 9/9 tasks (0 errors). Cấu trúc file export đạt chuẩn Segmentation mask 1.1 và COCO 1.0, không còn lớp thừa/background hay lỗi phân giải.
 
 ## 4. Ba ca chưa chắc hoặc đã cân nhắc
 
